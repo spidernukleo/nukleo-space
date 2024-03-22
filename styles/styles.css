@@ -1,0 +1,201 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body{
+	background-image: url("../assets/wallpaper.png");
+	line-height: 1.8;
+	background-repeat: no-repeat;
+	color: #ffffff;
+	height: 100vh;
+}
+
+
+
+
+a{
+	color: greenyellow;
+	transition: 500ms;
+}
+
+.icon{
+	width: 1.4em;
+	margin-right:10px;
+}
+
+
+
+@keyframes apparizione {
+    0% {
+        opacity: 0; /* Start with opacity 0 */
+        transform: scale(0); /* Start with scale 0 */
+    }
+    50% {
+        opacity: 0.7; /* Partially visible */
+        transform: scale(1.2); /* Slightly larger size */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: scale(1); /* Return to original size */
+    }
+}
+
+
+#logo{
+	border-radius: 50%;
+	width:150px;
+	display: block;
+	margin: 20px auto;
+	animation: apparizione 1.5s ease-out forwards;
+}
+
+#titolo{
+	text-align: center;
+	margin-top: 20px;
+	font-family: "Consolas";
+}
+
+@media screen and (max-width: 402px) {
+  #yt::after {
+    content: "\a";
+    white-space: pre;
+  }
+}
+
+
+@media screen and (min-height: 777px){
+	body{
+		overflow:hidden;
+	}
+}
+
+
+#navbar{
+	text-align: center;
+	padding:4px 4px;
+	font-family: "Consolas";
+	margin-top: 20px;
+	width: 100%;
+}
+
+#about{
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+}
+
+h2{
+	margin-top: 20px;
+}
+
+p{
+	margin-top: 20px;
+	max-width: 60ch;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer{
+	font-family: 'Dosis', sans-serif;
+	width: 100%;
+	text-align: center;
+	
+	
+}
+
+.rosso{
+	color:#ff0000;
+	font-weight: bold;
+}
+
+.verde{
+	color: greenyellow;
+	font-weight: bold;
+}
+
+.yellow{
+	color: yellow;
+	font-weight: bold;
+}
+
+
+#song{
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+}
+
+h3{
+	margin-top: 20px;
+}
+
+audio{
+	margin-top:20px;
+}
+
+.sopra:hover{
+	font-size:20px;
+	padding:10px;
+}
+
+
+ul{
+	border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+	display: inline-block;
+	list-style-type: none;
+	position: relative;
+}
+
+.contact-me {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    display:none;
+    transition: opacity 0.3s ease;
+}
+
+.contact-me a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+ul:hover .contact-me {
+    display: list-item;
+}
+
+.telegram-banner {
+    display: inline-block;
+    margin: 20px;
+    text-align: center; /* Centra il contenuto orizzontalmente */
+}
+
+.telegram-button {
+    background-color: #0088cc; /* Colore di sfondo del pulsante */
+    color: #fff; /* Colore del testo */
+    padding: 10px 20px; /* Spaziatura interna */
+    border-radius: 5px; /* Bordi arrotondati */
+    font-size: 16px; /* Dimensione del testo */
+    cursor: pointer; /* Mostra un cursore mano quando si passa sopra */
+    display: inline-block; /* Imposta il display a inline-block per centrare il contenuto */
+}
+
+.telegram-button:hover {
+    background-color: #005580; /* Cambia colore di sfondo al passaggio del mouse */
+}
+
+.telegram-banner p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666; /* Colore del testo */
+}
+
+.telegram-banner{
+	margin-top: 4%;
+}
